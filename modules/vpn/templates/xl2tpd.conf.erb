@@ -1,0 +1,12 @@
+[global]
+ipsec saref = no
+
+[lns default]
+ip range = 10.10.0.30-10.10.0.40
+local ip = 10.10.0.1
+refuse pap = yes
+require authentication = yes
+ppp debug = yes
+pppoptfile = /etc/ppp/options.xl2tpd
+length bit = yes
+
