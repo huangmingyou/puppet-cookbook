@@ -1,4 +1,4 @@
-node 'default'{
+node 'debian'{
 # for ipsec
   $ipsecpass ="youpass"
   #include vpn

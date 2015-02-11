@@ -8,4 +8,4 @@ File{
   ensure => present,
   mode => 0644, owner => root, group => root,
 }
-import 'node.pp'
+import 'node/*.pp'
