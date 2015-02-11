@@ -1,4 +1,5 @@
 class vpn::ipsec {
+$IPSECPASS="youpass"
 package {
         "openswan":
         ensure => installed;

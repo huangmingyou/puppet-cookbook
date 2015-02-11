@@ -1,12 +1,8 @@
 config setup
     dumpdir=/var/run/pluto/
-    #in what directory should things started by setup (notably the Pluto daemon) be allowed to dump core?
     nat_traversal=yes
-    #whether to accept/offer to support NAT (NAPT, also known as "IP Masqurade") workaround for IPsec
     virtual_private=%v4:10.0.0.0/8,%v4:192.168.0.0/16,%v4:172.16.0.0/12,%v6:fd00::/8,%v6:fe80::/10
-    #contains the networks that are allowed as subnet= for the remote client. In other words, the address ranges that may live behind a NAT router through which a client connects.
     protostack=netkey
-    #decide which protocol stack is going to be used.
 
 conn L2TP-PSK-NAT
     rightsubnet=vhost:%priv
@@ -14,19 +10,13 @@ conn L2TP-PSK-NAT
 
 conn L2TP-PSK-noNAT
     authby=secret
-    #shared secret. Use rsasig for certificates.
     pfs=no
-    #Disable pfs
     auto=add
-    #start at boot
     keyingtries=3
-    #Only negotiate a conn. 3 times.
     ikelifetime=8h
     keylife=1h
     type=transport
-    #because we use l2tp as tunnel protocol
     left=<%= @ipaddress_eth0 %>
-    #fill in server IP above
     leftprotoport=17/1701
     right=%any
     rightprotoport=17/%any

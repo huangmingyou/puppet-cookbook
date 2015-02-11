@@ -1,3 +1,3 @@
-node 'hmy.example.com'{
+node 'default'{
   include vpn
 }
