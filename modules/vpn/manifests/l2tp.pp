@@ -1,20 +1,3 @@
-class vpn::ipsec {
-package {
-        "openswan":
-        ensure => installed;
-        }
-
-file {
-        "/etc/ipsec.conf":
-        mode => 0644,
-        content => template("vpn/ipsec.conf.erb");
-        "/etc/ipsec.secrets":
-        mode => 0644,
-        content => template("vpn/ipsec.secrets.erb");
-        }
-}
-
-
 class vpn::l2tp {
 include ipsec
 	package {
@@ -25,10 +8,10 @@ include ipsec
 file {
         "/etc/ppp/options.xl2tpd":
         mode => 0644,
-        content => template("vpn/options.xl2tpd.erb");
+	source => "puppet:///modules/vpn/files/options.xl2tpd";
         "/etc/xl2tpd/xl2tpd.conf":
         mode => 0644,
-        content => template("vpn/xl2tpd.conf.erb");
+	source => "puppet:///modules/vpn/files/xl2tpd.conf";
 
 }
 }

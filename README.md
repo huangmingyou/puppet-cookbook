@@ -11,6 +11,6 @@ puppet cookbook for debian or ubuntu.
 >  puppet apply  --modulepath=/root/puppet-cookbook/modules /root/puppet-cookbook/manifests/site.pp
 
 
-# vpn 
+# vpn类
 
 配置一个兼容iphone的pptp或者l2tp vpn服务器
