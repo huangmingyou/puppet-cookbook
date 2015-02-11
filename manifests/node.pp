@@ -1,3 +1,3 @@
-node 'v3.xunyou.com'{
+node 'hmy.example.com'{
   include vpn
 }
