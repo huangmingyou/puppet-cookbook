@@ -1,3 +1,3 @@
-default {
-	include base
+node 'v3.xunyou.com'{
+  include vpn
 }

@@ -25,7 +25,7 @@ conn L2TP-PSK-noNAT
     keylife=1h
     type=transport
     #because we use l2tp as tunnel protocol
-    left=<%= ipaddress_eth0 %>
+    left=<%= @ipaddress_eth0 %>
     #fill in server IP above
     leftprotoport=17/1701
     right=%any
