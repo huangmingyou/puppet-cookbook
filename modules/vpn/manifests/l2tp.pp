@@ -1,5 +1,5 @@
 class vpn::l2tp {
-include ipsec
+include vpn::ipsec
 	package {
         "xl2tpd":
         ensure => installed;
