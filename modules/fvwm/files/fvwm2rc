@@ -1,0 +1,102 @@
+###########################################################################################
+# fvwm2 仿 plan9 rio 
+# 根据 difancn@gmail.com 发布在https://code.google.com/p/fvwm-rio/ 的代码修改
+# author: hmy[huangmingyou@gmail.com]
+#################################[ 样式定义 ]##############################################
+SetEnv minDesk 0
+SetEnv maxDesk 1
+DeskTopSize 1x1
+DefaultFont "StringEncoding=utf8:xft:Microsoft YaHei:size=10:encoding=iso10646-1"
+HideGeometryWindow
+ColormapFocus FollowsMouse
+#Colorset 1 fg black, bg rgb:9e/e/ee, sh rgb:9e/ee/ee, hi rgb:9e/ee/ee
+Colorset 1 fg black, bg rgb:00/00/00, sh rgb:00/00/00, hi rgb:00/00/00
+Colorset 2 fg black, bg rgb:55/aa/aa, sh rgb:55/aa/aa, hi rgb:55/aa/aa
+Colorset 3 fg black, bg rgb:e9/ff/e9, sh rgb:88/cc/88, hi rgb:88/cc/88
+Style *		BorderWidth 2, !Handles, !Title, !Icon
+Style *		ClickToFocus, ClickToFocusPassesClick,ResizeHintOverride
+Style *		SmartPlacement
+Style * 	BorderColorset 1
+Style * 	HilightBorderColorset 2
+Style "Fvwm*"		Sticky, WindowListSkip, CirculateSkipIcon, CirculateSkip
+Style "Virt*"		BorderWidth 0
+MenuStyle * 	Hilight3DOff, PopupDelayed, PopupDelay 160, SeparatorsLong
+MenuStyle * 	ActiveFore white, HilightBack rgb:44/88/44
+MenuStyle * 	MenuColorset 3
+#################################[ 函数定义 ]##############################################
+DestroyFunc StartFunction
+AddToFunc StartFunction
++ I Exec exec xsetroot -solid black
++ I Exec exec xset b off
++ I Exec exec xset s off
++ I Exec exec xset -dpms
++ I JumpExec urxvt urxvt
++ I JumpExec *Google* google-chrome
+DestroyFunc WindowListFunc
+AddToFunc WindowListFunc
++ I Raise
++ I FlipFocus
+DestroyFunc JumpTo
+AddToFunc JumpTo
++ I All ($0) WindowListFunc
+DestroyFunc JumpExec
+AddToFunc JumpExec
++ I All ($0) WindowListFunc
++ I None ($0) Exec exec $1 &
+DestroyFunc Move-or-Raise
+AddToFunc Move-or-Raise		M Move
+DestroyFunc Resize-or-Raise
+AddToFunc Resize-or-Raise	M Resize
+DestroyFunc MoveToCurrentDesk
+AddToFunc MoveToCurrentDesk
++ I Iconify off
++ I MoveToDesk 0 $[desk.n]
+#################################[ 鼠标键盘 ]##############################################
+Mouse 1 	W	M	Move-or-Raise
+Mouse 3 	W	M	Resize-or-Raise
+Key F1		A	A	JumpExec urxvt urxvt
+Key F2		A	A	JumpExec *Google* google-chrome
+Key F1		A	M 	JumpExec xterm xterm
+#Key F3		A	A 	JumpExec emacs emacs
+Key F3		A	A 	JumpExec *Vir* urxvt
+Key F4		A	A 	FvwmRearrange -tile -u -mn 2 -resize -m  1 1 99 99
+#Key F4		A	A 	FvwmRearrange -cascade -incx -2p  -incy -2p -u  -resize -m  1 1 98 98
+Key F4		A 	M 	Close
+
+Key F6 		A 	A 	GotoDesk 0 0
+Key F7 		A 	A 	GotoDesk 0 1
+Key F8		A	A	WindowList Function MoveToCurrentDesk NoNormal NoHotkeys NoGeometry NoCurrentDeskTitle NoNumInDeskTitle NoDeskNum
+
+Key F9		W 	A 	WindowList Root c c CurrentAtEnd CurrentDesk NoIcons  NoGeometry NoCurrentDeskTitle NoNumInDeskTitle NoDeskNum SelectOnRelease Meta_L 
+#Key F10 	A 	A 	ResizeMove 1024p 942p 0 0-22p
+Key F10 	A 	A 	ResizeMove 1024p 810p 0 0-22p
+Key F11		W	A	Iconify
+Key F12 	A 	A 	Exec exec slock
+
+Key t		A	4	Layer 0 8
+Key b		A	4	Layer 0 4
+Key r           A       4       Restart fvwm2
+Key v           A       M       exec VBoxManage startvm 7d01ec95-1e49-4142-8043-590170a2402f
+Key h 		A 	4       ResizeMove w+3 w w-3 w
+Key j 		A 	4       ResizeMove w w-3 w w+3
+Key k 		A 	4       ResizeMove w w+3 w w-3
+Key l 		A 	4       ResizeMove 880p 1076p 70 0
+#Key l 		A 	4       ResizeMove w-3 w w+3 w
+Key d 		A 	4       ResizeMove w+3 w w  w
+Key a 		A 	4       ResizeMove w-3 w w  w
+Key s 		A 	4       ResizeMove w w+3 w w
+Key w 		A 	4       ResizeMove w w-3 w w
+
+Key Up		A 	4 	Move w w-3
+Key Down	A 	4 	Move w w+3
+Key Left	A 	4 	Move w-3 w
+Key Right	A 	4 	Move w+3 w
+Key Return 	A 	M 	Maximize
+
+Key Tab		A	M	WindowList Root c c CurrentAtEnd CurrentDesk NoIcons	NoGeometry NoCurrentDeskTitle NoNumInDeskTitle NoDeskNum SelectOnRelease Meta_L Layer 4
+Key 1           A       4       Exec exec xclip ~hmy/.pass/root
+Key 2           A       4       Exec exec xclip ~hmy/.pass/google
+Key 3           A       4       Exec exec xclip ~hmy/.pass/dns
+Key 4           A       4       Exec exec xclip ~hmy/.pass/p4
+Key 5           A       4       Exec exec xclip ~hmy/.pass/p5
+Key 6           A       4       Exec exec xclip ~hmy/.pass/p6

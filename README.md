@@ -14,3 +14,7 @@ puppet cookbook for debian or ubuntu.
 # vpn类
 
 配置一个兼容iphone的pptp或者l2tp vpn服务器
+
+# fvwm类
+
+配置fvwm桌面环境

@@ -1,3 +1,11 @@
 node 'default'{
-  include vpn
+# for ipsec
+  $ipsecpass ="youpass"
+  #include vpn
+
+
+
+# for fvwm
+  $username="hmy"
+  include fvwm
 }
