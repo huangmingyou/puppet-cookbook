@@ -8,6 +8,7 @@ puppet cookbook for debian or ubuntu.
 编辑node.pp,加入需要的类，然后执行
 
 > cd puppet-cookbook
+
 > bash run.sh
 
 
