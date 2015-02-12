@@ -10,14 +10,24 @@ DefaultFont "StringEncoding=utf8:xft:Microsoft YaHei:size=10:encoding=iso10646-1
 HideGeometryWindow
 ColormapFocus FollowsMouse
 #Colorset 1 fg black, bg rgb:9e/e/ee, sh rgb:9e/ee/ee, hi rgb:9e/ee/ee
-Colorset 1 fg black, bg rgb:00/00/00, sh rgb:00/00/00, hi rgb:00/00/00
-Colorset 2 fg black, bg rgb:55/aa/aa, sh rgb:55/aa/aa, hi rgb:55/aa/aa
+################################[ 颜色 ]#############################
+Colorset 1 fg black, bg rgb:66/66/66, sh rgb:6f/66/66, hi rgb:66/66/66
+Colorset 2 fg black, bg rgb:ff/24/00, sh rgb:ff/24/00, hi rgb:ff/24/00
 Colorset 3 fg black, bg rgb:e9/ff/e9, sh rgb:88/cc/88, hi rgb:88/cc/88
+# 桔红
+Colorset 4 fg black, bg rgb:ff/24/00, sh rgb:ff/24/00, hi rgb:ff/24/00
+# 深绿
+Colorset 5 fg black, bg rgb:55/aa/aa, sh rgb:55/aa/aa, hi rgb:55/aa/aa
+# 桔黄
+Colorset 6 fg black, bg rgb:e4/78/33, sh rgb:e4/78/33, hi rgb:e4/78/33
+######################################################################
+######################################################################
 Style *		BorderWidth 2, !Handles, !Title, !Icon
 Style *		ClickToFocus, ClickToFocusPassesClick,ResizeHintOverride
 Style *		SmartPlacement
 Style * 	BorderColorset 1
-Style * 	HilightBorderColorset 2
+# 活动窗口颜色
+Style * 	HilightBorderColorset 5
 Style "Fvwm*"		Sticky, WindowListSkip, CirculateSkipIcon, CirculateSkip
 Style "Virt*"		BorderWidth 0
 MenuStyle * 	Hilight3DOff, PopupDelayed, PopupDelay 160, SeparatorsLong

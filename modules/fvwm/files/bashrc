@@ -112,30 +112,14 @@ export    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\
 alias ssh='xclip ~/.pass/root;ssh'
 alias s='xclip ~/.pass/google;ssh'
 alias vlist='vboxmanage  list vms'
-alias basevstart='vboxmanage  startvm'
 
-
-export GOROOT=/usr/local/go
-
-alias idpub='xclip ~/.ssh/id_dsa.pub'
-alias pa='~/opt/polysh-0.4/polysh.py --hosts-file ~/.dsh/group/all'
-
-export  GOPATH=/home/hmy/work/gorpc:/home/hmy/work/updateiis
-
-function cv () {
-           cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
-       }
 
 [ -f /usr/share/bash-completion/bash_completion ]&&. /usr/share/bash-completion/bash_completion
 export MAIL=/home/hmy/Private/mail
 alias  xc='xclip -selection clipboard'
 export PAGER=most
 export PATH=/opt/tmux/bin:~hmy/work/bin:/usr/local/texlive/2013/bin/x86_64-linux:/opt/google/chrome:$PATH
-alias td="task list"
 alias luna="lunar -h --utf8 `date "+%Y %m %d %H"`"
-function vset (){
-	vlist|grep $1|awk '{print $NF}'|sed -e 's/}//' -e 's/{//'
-}
 
 alias pa='/opt/polysh-0.4/polysh.py  --hosts-file ~/.dsh/group/all'
 export  HOSTALIASES=~/hosts
@@ -148,6 +132,7 @@ tmux list-sessions >/dev/null 2>/dev/null
 
 
 
+alias basevstart='vboxmanage  startvm'
 function vstart () {
 	basevstart $(vlist|grep $@|head -n 1|awk '{print $NF}'|sed -e 's/{//' -e 's/}//')
 }
