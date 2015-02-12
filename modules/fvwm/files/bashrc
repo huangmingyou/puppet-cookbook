@@ -146,7 +146,6 @@ function pssh () {
 tmux list-sessions >/dev/null 2>/dev/null
 [ $? -ne 0 ]&&tmux
 
-alias dell215='ipmitool -U root -P redhat -H 10.2.1.5 -I lanplus'
 
 
 function vstart () {
