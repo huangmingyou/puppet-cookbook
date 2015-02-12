@@ -3,13 +3,15 @@ puppet cookbook for debian or ubuntu.
 
 # run
 
+下载代码
 > git clone https://github.com/huangmingyou/puppet-cookbook.git
 
-编辑node.pp,加入需要的类，然后执行
+进入代码目录
 
 > cd puppet-cookbook
 
-> bash run.sh
+执行下面的命令， vpn,dnsmasq 表示需要执行的类
+> ./run.sh vpn,dnsmasq
 
 
 # vpn类
@@ -19,3 +21,7 @@ puppet cookbook for debian or ubuntu.
 # fvwm类
 
 配置fvwm桌面环境
+
+# dnsmasq
+
+最简单的dnsmasq配置

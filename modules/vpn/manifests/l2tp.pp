@@ -4,7 +4,6 @@ include vpn::ipsec
         "xl2tpd":
         ensure => installed;
 }
-->
 file {
         "/etc/ppp/options.xl2tpd":
 	source => "puppet:///modules/vpn/options.xl2tpd";

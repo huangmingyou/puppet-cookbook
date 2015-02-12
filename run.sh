@@ -1,3 +1,3 @@
 #!/bin/bash
 basedir=`pwd`
-puppet apply --modulepath=${basedir}/modules ${basedir}/manifests/site.pp
+puppet apply --ordering manifest --modulepath=${basedir}/modules ${basedir}/manifests/site.pp -e "include $1"

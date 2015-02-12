@@ -3,9 +3,6 @@ package {
         "pptpd":
                 ensure => installed;
         }
-
-
-->
 file {
         "/etc/ppp/pptpd-options":
 	source => "puppet:///modules/vpn/pptpd-options";

@@ -3,7 +3,6 @@ package {
         "openswan":
         ensure => installed;
         }
-->
 file {
         "/etc/ipsec.conf":
         content => template("vpn/ipsec.conf.erb");
