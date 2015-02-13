@@ -30,5 +30,8 @@ file {
 	owner => $username,
 	group => $username,
 	source => "puppet:///modules/fvwm/bashrc";
+
+	"/etc/bash_completion.d/bash_complete.s":
+	source => "puppet:///modules/fvwm/bash_complete.s";
 	}
 }
