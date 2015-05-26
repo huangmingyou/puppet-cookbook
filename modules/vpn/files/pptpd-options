@@ -1,9 +1,5 @@
-option /etc/ppp/pptpd-options
-logwtmp
-localip 10.0.1.1
-remoteip 10.0.1.234-238
-root@v3:~# cat /etc/ppp/pptpd-options
 name pptpd
+require-chap
 ms-dns 8.8.8.8
 proxyarp
 nodefaultroute
