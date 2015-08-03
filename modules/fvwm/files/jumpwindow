@@ -1,0 +1,54 @@
+WindowTitle {Bell}
+WindowSize 420 40 # Taille
+WindowPosition 500 500 # Position
+ForeColor	{black}
+BackColor	{grey85}
+ShadowColor	{grey55}
+HilightColor	{grey100}
+Font		-adobe-helvetica-bold-r-*-*-12-*
+
+
+Widget 2
+Property
+ Size 50 30
+ Position 275 5
+ Type PushButton
+ Title {OK}
+Main
+ Case message of
+  SingleClic :
+  Begin
+   Do {Jumpto }  (GetTitle 8)
+   Quit
+  End
+End
+
+Widget 3
+Property
+ Size 50 30
+ Position 350 5
+ Type PushButton
+ Title {Cancel}
+Main
+ Case message of
+  SingleClic :
+  Begin
+   Quit
+  End
+End
+
+
+Widget 8
+Property
+ Size 260 1
+ Position 5 5
+ Type TextField
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+
+

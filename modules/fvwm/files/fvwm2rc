@@ -36,7 +36,8 @@ MenuStyle * 	MenuColorset 3
 #################################[ 函数定义 ]##############################################
 DestroyFunc StartFunction
 AddToFunc StartFunction
-+ I Exec exec xsetroot -solid black
++ I Exec exec fvwm-root /home/hmy/.fvwm/y3.png
+#+ I Exec exec xsetroot -solid black
 + I Exec exec xset b off
 + I Exec exec xset s off
 + I Exec exec xset -dpms
@@ -61,6 +62,11 @@ DestroyFunc MoveToCurrentDesk
 AddToFunc MoveToCurrentDesk
 + I Iconify off
 + I MoveToDesk 0 $[desk.n]
+
+DestroyFunc lockx
+AddToFunc lockx
++ I GotoDesk 0 1
++ I Exec exec  slock
 #################################[ 鼠标键盘 ]##############################################
 Mouse 1 	W	M	Move-or-Raise
 Mouse 3 	W	M	Resize-or-Raise
@@ -81,7 +87,7 @@ Key F9		W 	A 	WindowList Root c c CurrentAtEnd CurrentDesk NoIcons  NoGeometry N
 #Key F10 	A 	A 	ResizeMove 1024p 942p 0 0-22p
 Key F10 	A 	A 	ResizeMove 1024p 810p 0 0-22p
 Key F11		W	A	Iconify
-Key F12 	A 	A 	Exec exec slock
+Key F12 	A 	A 	lockx
 
 Key t		A	4	Layer 0 8
 Key b		A	4	Layer 0 4
@@ -110,3 +116,7 @@ Key 3           A       4       Exec exec xclip ~hmy/.pass/dns
 Key 4           A       4       Exec exec xclip ~hmy/.pass/p4
 Key 5           A       4       Exec exec xclip ~hmy/.pass/p5
 Key 6           A       4       Exec exec xclip ~hmy/.pass/p6
+Key 7           A       4       Exec exec xclip ~hmy/.pass/p7
+Key 8           A       4       Exec exec xclip ~hmy/.pass/p8
+Key 9           A       4       Exec exec xclip ~hmy/.pass/p9
+Key 0           A       4       Exec exec xclip ~hmy/.pass/p0

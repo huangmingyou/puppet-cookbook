@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=100000
+HISTFILESIZE=200000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -108,31 +108,29 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 alias ssh='xclip ~/.pass/root;ssh'
 alias s='xclip ~/.pass/google;ssh'
-alias vlist='vboxmanage  list vms'
-
-
 [ -f /usr/share/bash-completion/bash_completion ]&&. /usr/share/bash-completion/bash_completion
-export MAIL=/home/hmy/Private/mail
+export MAIL=/home/hmy/Mail
 alias  xc='xclip -selection clipboard'
 export PAGER=most
-export PATH=/opt/tmux/bin:~hmy/work/bin:/usr/local/texlive/2013/bin/x86_64-linux:/opt/google/chrome:$PATH
-alias luna="lunar -h --utf8 `date "+%Y %m %d %H"`"
-
-alias pa='/opt/polysh-0.4/polysh.py  --hosts-file ~/.dsh/group/all'
 export  HOSTALIASES=~/hosts
-function pssh () {
-	/opt/polysh-0.4/polysh.py  --hosts-file $1
-}
 
 tmux list-sessions >/dev/null 2>/dev/null
 [ $? -ne 0 ]&&tmux
 
-
-
-alias basevstart='vboxmanage  startvm'
 function vstart () {
 	basevstart $(vlist|grep $@|head -n 1|awk '{print $NF}'|sed -e 's/{//' -e 's/}//')
+}
+
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+. "${HOME}/.gpg-agent-info"
+export GPG_AGENT_INFO
+export SSH_AUTH_SOCK
+fi
+GPG_TTY=$(tty)
+export GPG_TTY
+export    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+function pass () {
+	xclip ~hmy/.pass/$@
 }

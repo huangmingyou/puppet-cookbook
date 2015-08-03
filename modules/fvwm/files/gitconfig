@@ -1,0 +1,6 @@
+[user]
+	name = huangmingyou
+	email = huangmingyou@gmail.com
+	signingkey = 936D7DB9
+[credential]
+	helper = cache --timeout=3600

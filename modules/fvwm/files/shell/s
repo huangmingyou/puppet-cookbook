@@ -1,0 +1,5 @@
+#!/bin/bash
+pass=${2:-root}
+xclip ~/.pass/$pass
+ssh $1
+

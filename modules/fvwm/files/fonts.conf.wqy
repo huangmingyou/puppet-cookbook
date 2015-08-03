@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+<!-- created by WenQuanYi FcDesigner v0.5 -->
+<match>
+	<test name="family"><string>sans-serif</string></test>
+	<edit name="family" mode="prepend" binding="strong">
+		<string>Droid Sans</string>
+		<string>微软雅黑</string>
+			<!-- Please install 微软雅黑 first -->
+		<string>DejaVu Sans</string>
+		<string>WenQuanYi Micro Hei</string>
+		<string>WenQuanYi Zen Hei</string>
+		<string>Liberation Sans</string>
+		<string>WenQuanYi Bitmap Song</string>
+			<!-- Please install WenQuanYi Bitmap Song first -->
+		<string>Bitstream Charter</string>
+		<string>Century Schoolbook L</string>
+		<string>CosmicSansNeueMono</string>
+		<string>Courier 10 Pitch</string>
+			<!-- Please install Courier 10 Pitch first -->
+		<string>DejaVu Sans</string>
+		<string>DejaVu Sans Mono</string>
+		<string>DejaVu Serif</string>
+		<string>Dingbats</string>
+		<string>Droid Arabic Naskh</string>
+		<string>Droid Sans</string>
+		<string>Droid Sans Armenian</string>
+		<string>Droid Sans Ethiopic</string>
+		<string>Droid Sans Fallback</string>
+		<string>Droid Sans Georgian</string>
+		<string>Droid Sans Hebrew</string>
+		<string>Droid Sans Japanese</string>
+			<!-- Please install Droid Sans Japanese first -->
+		<string>Droid Sans Mono</string>
+		<string>Droid Sans Thai</string>
+		<string>Droid Serif</string>
+		<string>FreeMono</string>
+		<string>FreeSans</string>
+		<string>FreeSerif</string>
+		<string>Monaco</string>
+		<string>Monospace</string>
+			<!-- Please install Monospace first -->
+		<string>Nimbus Mono L</string>
+		<string>Nimbus Roman No9 L</string>
+		<string>Nimbus Sans L</string>
+		<string>Sans</string>
+			<!-- Please install Sans first -->
+		<string>Serif</string>
+			<!-- Please install Serif first -->
+		<string>Standard Symbols L</string>
+			<!-- Please install Standard Symbols L first -->
+		<string>Terminus</string>
+			<!-- Please install Terminus first -->
+		<string>URW Bookman L</string>
+		<string>URW Chancery L</string>
+		<string>URW Gothic L</string>
+		<string>URW Palladio L</string>
+		<string>VL Gothic</string>
+		<string>VL PGothic</string>
+		<string>WenQuanYi Bitmap Song</string>
+			<!-- Please install WenQuanYi Bitmap Song first -->
+		<string>方正准雅宋简</string>
+		<string>方正北魏楷书繁体</string>
+		<string>方正宋刻本秀楷简体</string>
+	</edit>
+</match>
+<match>
+	<test name="family"><string>serif</string></test>
+	<edit name="family" mode="prepend" binding="strong">
+		<string>Droid Serif</string>
+		<string>方正准雅宋简</string>
+		<string>DejaVu Serif</string>
+		<string>WenQuanYi Bitmap Song</string>
+			<!-- Please install WenQuanYi Bitmap Song first -->
+		<string>AR PL UMing CN</string>
+			<!-- Please install AR PL UMing CN first -->
+		<string>AR PL SungtiL GB</string>
+			<!-- Please install AR PL SungtiL GB first -->
+		<string>WenQuanYi Zen Hei Sharp</string>
+			<!-- Please install WenQuanYi Zen Hei Sharp first -->
+		<string>AR PL UMing TW</string>
+			<!-- Please install AR PL UMing TW first -->
+		<string>Liberation Serif</string>
+			<!-- Please install Liberation Serif first -->
+		<string>Bitstream Charter</string>
+		<string>Bitstream Charter</string>
+		<string>Century Schoolbook L</string>
+		<string>CosmicSansNeueMono</string>
+		<string>Courier 10 Pitch</string>
+			<!-- Please install Courier 10 Pitch first -->
+		<string>DejaVu Sans</string>
+		<string>DejaVu Sans Mono</string>
+		<string>DejaVu Serif</string>
+		<string>Dingbats</string>
+		<string>Droid Arabic Naskh</string>
+		<string>Droid Sans</string>
+		<string>Droid Sans Armenian</string>
+		<string>Droid Sans Ethiopic</string>
+		<string>Droid Sans Fallback</string>
+		<string>Droid Sans Georgian</string>
+		<string>Droid Sans Hebrew</string>
+		<string>Droid Sans Japanese</string>
+			<!-- Please install Droid Sans Japanese first -->
+		<string>Droid Sans Mono</string>
+		<string>Droid Sans Thai</string>
+		<string>Droid Serif</string>
+		<string>FreeMono</string>
+		<string>FreeSans</string>
+		<string>FreeSerif</string>
+		<string>Monaco</string>
+		<string>Monospace</string>
+			<!-- Please install Monospace first -->
+		<string>Nimbus Mono L</string>
+		<string>Nimbus Roman No9 L</string>
+		<string>Nimbus Sans L</string>
+		<string>Sans</string>
+			<!-- Please install Sans first -->
+		<string>Serif</string>
+			<!-- Please install Serif first -->
+		<string>Standard Symbols L</string>
+			<!-- Please install Standard Symbols L first -->
+		<string>Terminus</string>
+			<!-- Please install Terminus first -->
+		<string>URW Bookman L</string>
+		<string>URW Chancery L</string>
+		<string>URW Gothic L</string>
+		<string>URW Palladio L</string>
+		<string>VL Gothic</string>
+		<string>VL PGothic</string>
+		<string>WenQuanYi Bitmap Song</string>
+			<!-- Please install WenQuanYi Bitmap Song first -->
+		<string>微软雅黑</string>
+			<!-- Please install 微软雅黑 first -->
+		<string>方正北魏楷书繁体</string>
+		<string>方正宋刻本秀楷简体</string>
+	</edit>
+</match>
+<match>
+	<test name="family"><string>monospace</string></test>
+	<edit name="family" mode="prepend" binding="strong">
+		<string>Droid Sans Mono</string>
+		<string>微软雅黑</string>
+			<!-- Please install 微软雅黑 first -->
+		<string>WenQuanYi Zen Hei Mono</string>
+			<!-- Please install WenQuanYi Zen Hei Mono first -->
+		<string>WenQuanYi Micro Hei Mono</string>
+			<!-- Please install WenQuanYi Micro Hei Mono first -->
+		<string>DejaVu Sans Mono</string>
+		<string>WenQuanYi Zen Hei Sharp</string>
+			<!-- Please install WenQuanYi Zen Hei Sharp first -->
+		<string>Liberation Sans Mono</string>
+			<!-- Please install Liberation Sans Mono first -->
+		<string>AR PL UMing TW</string>
+			<!-- Please install AR PL UMing TW first -->
+		<string>Bitstream Charter</string>
+		<string>CosmicSansNeueMono</string>
+		<string>Century Schoolbook L</string>
+		<string>Courier 10 Pitch</string>
+			<!-- Please install Courier 10 Pitch first -->
+		<string>DejaVu Sans</string>
+		<string>DejaVu Sans Mono</string>
+		<string>DejaVu Serif</string>
+		<string>Dingbats</string>
+		<string>Droid Arabic Naskh</string>
+		<string>Droid Sans</string>
+		<string>Droid Sans Armenian</string>
+		<string>Droid Sans Ethiopic</string>
+		<string>Droid Sans Fallback</string>
+		<string>Droid Sans Georgian</string>
+		<string>Droid Sans Hebrew</string>
+		<string>Droid Sans Japanese</string>
+			<!-- Please install Droid Sans Japanese first -->
+		<string>Droid Sans Mono</string>
+		<string>Droid Sans Thai</string>
+		<string>Droid Serif</string>
+		<string>FreeMono</string>
+		<string>FreeSans</string>
+		<string>FreeSerif</string>
+		<string>Monaco</string>
+		<string>Monospace</string>
+			<!-- Please install Monospace first -->
+		<string>Nimbus Mono L</string>
+		<string>Nimbus Roman No9 L</string>
+		<string>Nimbus Sans L</string>
+		<string>Sans</string>
+			<!-- Please install Sans first -->
+		<string>Serif</string>
+			<!-- Please install Serif first -->
+		<string>Standard Symbols L</string>
+			<!-- Please install Standard Symbols L first -->
+		<string>Terminus</string>
+			<!-- Please install Terminus first -->
+		<string>URW Bookman L</string>
+		<string>URW Chancery L</string>
+		<string>URW Gothic L</string>
+		<string>URW Palladio L</string>
+		<string>VL Gothic</string>
+		<string>VL PGothic</string>
+		<string>WenQuanYi Bitmap Song</string>
+			<!-- Please install WenQuanYi Bitmap Song first -->
+		<string>方正准雅宋简</string>
+		<string>方正北魏楷书繁体</string>
+		<string>方正宋刻本秀楷简体</string>
+	</edit>
+</match>
+</fontconfig>

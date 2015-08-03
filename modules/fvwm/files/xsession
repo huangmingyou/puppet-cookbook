@@ -1,0 +1,4 @@
+xrandr --output DVI-I-2 --mode 1920x1080 --pos 0x0 --output DVI-I-1 --mode 1024x768 --pos 1920x0 --left-of DVI-I-2
+keynav&
+gpg-agent --enable-ssh-support --max-cache-ttl 36000 --daemon  --write-env-file "${HOME}/.gpg-agent-info"
+fvwm2

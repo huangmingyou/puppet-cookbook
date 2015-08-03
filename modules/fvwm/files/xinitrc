@@ -1,0 +1,7 @@
+xrdb .Xresources
+xrandr --output DVI-I-2 --mode 1920x1080 --pos 0x0 --output DVI-I-1 --mode 1024x768 --pos 1920x0 --left-of DVI-I-2
+fcitx -d
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+exec fvwm

@@ -31,9 +31,11 @@ URxvt.color14: steelblue1
 URxvt.color7:gray85
 URxvt.color15:gray85
 
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
 
 Rxvt.saveLines:10000
-Rxvt.geometry: 173x59+348+133
+Rxvt.geometry: 159x56+0+0
 !
 !
 Rxvt.preeditType: Root

@@ -1,0 +1,53 @@
+\documentclass[14pt,a5paper]{article}
+%设置页面
+%定义页边距
+\usepackage{geometry}
+\geometry{top=0.2in,bottom=0.2in,left=0.2in,right=0.2in,head=0.00in}
+%定义纸张大小符合kindle 3 屏幕尺寸
+\geometry{papersize={4.5in,6in}}
+%定义纸张大小符合kindle dx 屏幕尺寸
+%\geometry{papersize={6in,8in}}
+
+\usepackage{graphicx}
+\usepackage[pagestyles,indentafter]{titlesec}
+\usepackage{fontspec,xunicode,xltxtra}
+\titleformat{\section}{\Large}{\thesection}{1em}{}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+
+%定义字体
+%\newfontfamily\msyh{微软雅黑}
+\newfontfamily\msyh{方正准雅宋简}
+%%%%%
+
+\usepackage{listings} %列出代码%
+\usepackage{xcolor} %列出代码%
+\lstset{language=Ruby ,label=ruby,backgroundcolor=\color{gray!50},frame=shadow,breaklines=true,basicstyle=\small}
+
+
+% 代码边框设置 %
+
+
+%%%
+
+\renewcommand{\baselinestretch}{1.38}
+
+
+
+\begin{document}
+
+\title{\msyh  饥饿游戏}
+
+
+\maketitle
+
+\tableofcontents
+
+
+\msyh
+\Large
+
+\input{content.tex}
+
+
+\end{document}

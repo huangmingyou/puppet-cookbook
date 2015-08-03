@@ -1,0 +1,4 @@
+#!/bin/bash
+grub-set-default 0
+grub-reboot 2
+shutdown -r now
