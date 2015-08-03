@@ -5,8 +5,8 @@ package {
 }
 
 File {
-	owner => $username,
-	group => $username,
+	owner => hmy,
+	group => hmy,
 }
 
 file {
