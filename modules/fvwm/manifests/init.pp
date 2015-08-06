@@ -1,6 +1,6 @@
 class fvwm {
 package {
-        ["gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-googlepinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent"]:
+        ["gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-googlepinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus"]:
         ensure => installed;
 }
 

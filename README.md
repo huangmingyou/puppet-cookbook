@@ -25,3 +25,7 @@ puppet cookbook for debian or ubuntu.
 # dnsmasq
 
 最简单的dnsmasq配置
+
+# squid
+
+默认的squid 配置
