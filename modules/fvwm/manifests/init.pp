@@ -1,6 +1,6 @@
 class fvwm {
 package {
-        ["gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-googlepinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus"]:
+        ["gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-googlepinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus"]:
         ensure => installed;
 }
 
@@ -9,6 +9,7 @@ File {
 	group => hmy,
 }
 
+$username="hmy"
 file {
 	"/home/${username}/.fvwm2rc":
 	source => "puppet:///modules/fvwm/fvwm2rc";
@@ -27,5 +28,7 @@ file {
 
 	"/etc/bash_completion.d/bash_complete.s":
 	source => "puppet:///modules/fvwm/bash_complete.s";
+	"/etc/apt/sources.list.d/google-chrome.list":
+	source => "puppet:///modules/fvwm/google-chrome.list";
 	}
 }
