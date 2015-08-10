@@ -1,6 +1,6 @@
 class fvwm {
 package {
-        ["most","gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-pinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus","redshift","vim"]:
+        ["xclip","most","gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-pinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus","redshift","vim"]:
         ensure => installed;
 }
 $username="hmy"
