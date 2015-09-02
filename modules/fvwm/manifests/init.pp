@@ -1,6 +1,6 @@
 class fvwm {
 package {
-        ["lftp","xclip","most","gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-pinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus","redshift","vim","scrot"]:
+        ["evince","mtr-tiny","slock","qiv","lftp","xclip","most","gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","fcitx-pinyin","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus","redshift","vim","scrot"]:
         ensure => installed;
 }
 $username="hmy"
@@ -45,5 +45,6 @@ file {
 
 exec {
 	"unziptheme":
+	require => File["/usr/share/slim/themes/slim-minimal-master.zip"],
 	command => "7z x -o/usr/share/slim/themes/  /usr/share/slim/themes/slim-minimal-master.zip";
 }
