@@ -120,14 +120,15 @@ Key 7           A       4       Exec exec xclip ~hmy/.pass/p7
 Key 8           A       4       Exec exec xclip ~hmy/.pass/p8
 Key 9           A       4       Exec exec xclip ~hmy/.pass/p9
 Key 0           A       4       Exec exec xclip ~hmy/.pass/p0
-Key 0 WI MC Key 0 A C WindowId $[w.id] WarpToWindow 50 50
-Key 1 WI MC Key 1 A C WindowId $[w.id] WarpToWindow 50 50
-Key 2 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 3 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 4 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 5 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 6 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 7 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 8 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
-Key 9 WI MC Key 2 A C WindowId $[w.id] WarpToWindow 50 50
+
+Key 0 WI MC Key 0 A SC WindowId $[w.id] WindowListFunc
+Key 9 WI MC Key 9 A SC WindowId $[w.id] WindowListFunc
+Key 8 WI MC Key 8 A SC WindowId $[w.id] WindowListFunc
+Key 7 WI MC Key 7 A SC WindowId $[w.id] WindowListFunc
+Key 6 WI MC Key 6 A SC WindowId $[w.id] WindowListFunc
+Key 5 WI MC Key 5 A SC WindowId $[w.id] WindowListFunc
+Key 4 WI MC Key 4 A SC WindowId $[w.id] WindowListFunc
+Key 3 WI MC Key 3 A SC WindowId $[w.id] WindowListFunc
+Key 2 WI MC Key 2 A SC WindowId $[w.id] WindowListFunc
+Key 1 WI MC Key 1 A SC WindowId $[w.id] WindowListFunc
 
