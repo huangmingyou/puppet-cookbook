@@ -1,2 +1,6 @@
 syntax on
 set background=dark
+"" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+call plug#end()
