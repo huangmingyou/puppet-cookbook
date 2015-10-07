@@ -1,6 +1,6 @@
 class fvwm {
 package {
-        ["msmtp","vim-puppet","reprepro","gitk","parallel","dsh","clusterssh","pssh","tsocks","rdesktop","orpie","evince","mtr-tiny","slock","qiv","lftp","xclip","most","gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","dbus-x11","dbus","redshift","vim","scrot"]:
+        ["msmtp","vim-puppet","reprepro","gitk","parallel","dsh","clusterssh","pssh","tsocks","rdesktop","orpie","evince","mtr-tiny","slock","qiv","lftp","xclip","most","gtk-theme-switch","gtk2-engines-oxygen","ssh-askpass","slim","wpasupplicant","acpi-support","keynav","fvwm","xfonts-terminus","xfonts-wqy","tmux","rxvt-unicode","ecryptfs-utils","p7zip-full","git-core","dmz-cursor-theme","gnupg-agent","ibus-sunpinyin","ibus","dbus-x11","dbus","redshift","vim","scrot"]:
         ensure => installed;
 }
 $username="hmy"
