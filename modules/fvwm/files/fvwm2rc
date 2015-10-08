@@ -40,6 +40,7 @@ AddToFunc StartFunction
 #+ I Exec exec xsetroot -solid black
 + I Exec exec xset b off
 + I Exec exec xset s off
++ I Exec exec synclient TouchpadOff=1
 + I Exec exec xset -dpms
 + I JumpExec urxvt urxvt
 + I JumpExec *Google* google-chrome
