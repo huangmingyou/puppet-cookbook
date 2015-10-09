@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+
+if [ -f ~hmy/.pass/${1#*@} ]; then 
+	xclip ~hmy/.pass/${1#*@}
+else
+	xclip ~hmy/.pass/root
+fi
+
+ssh $@
