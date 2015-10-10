@@ -1,0 +1,3 @@
+# Volume Up
+event=button/f20 F20 00000080 00000000 K
+action=/etc/acpi/thinkpad-suspend.sh
