@@ -15,4 +15,4 @@ complete -F _s g
 complete -F _s ping
 complete -F _s ssh
 complete -F _s mtr
-complete -F _s scp
+complete -f -F _s scp
