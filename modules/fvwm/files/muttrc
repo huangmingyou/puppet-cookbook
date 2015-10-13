@@ -15,3 +15,5 @@ macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender ad
 
 set quit=yes
 source ~/.mutt/gpg.rc
+auto_view text/html
+alternative_order text/plain text/enriched text/html
