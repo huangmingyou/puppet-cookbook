@@ -1,0 +1,75 @@
+Emacs.geometry: 212x51-88-46
+
+URxvt.foreground: gray
+URxvt.background: black
+Rxvt.colorBD:yellow
+Rxvt.colorUL:green
+URxvt.cursorColor: red3
+
+! 黑色
+URxvt.color0: black
+URxvt.color8:gray10
+! 红色
+URxvt.color1: red3
+URxvt.color9: orangered2
+! 绿色
+URxvt.color2:springgreen
+URxvt.color10: chartreuse3
+! 黄色
+URxvt.color3:wheat3
+URxvt.color11: lightgoldenrod2
+! 蓝色
+URxvt.color4:#6f99b4
+URxvt.color12: DarkGoldenrod
+! 紫红
+URxvt.color5:magenta4
+URxvt.color13: DarkGoldenrod
+! 蓝绿
+URxvt.color6: steelblue1
+URxvt.color14: steelblue1
+! 白色
+URxvt.color7:gray85
+URxvt.color15:gray85
+
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+
+Rxvt.saveLines:10000
+Rxvt.geometry: 159x56+0+0
+!
+!
+Rxvt.preeditType: Root
+!URxvt.borderColor: black
+!URxvt.internalBorder: 0
+!URxvt.externalBorder: 0
+URxvt.scrollBar: false
+
+
+
+
+URxvt.font:xft:Terminus-11:style=Regular,xft:WenQuanYi Bitmap Song:style=Regular
+URxvt.boldFont:xft:Terminus-11:style=Regular,xft:WenQuanYi Bitmap Song:style=Regular
+
+
+URxvt.perl-ext:           default,matcher
+URxvt.urlLauncher:        google-chrome
+URxvt.keysym.C-Delete:    perl:matcher
+URxvt.matcher.button:     2
+URxvt.matcher.pattern.1:  \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+URxvt.matcher.pattern.2:  \\B(/\\S+?):(\\d+)(?=:|$)
+URxvt.matcher.launcher.2: vim +$2 $1
+
+
+
+
+!jURxvt.depth:32
+!URxvt.background:[80]#000000
+!URxvt.perl-ext-common: default,tabbed
+
+!Emacs.font:Microsoft YaHei:style=Regular
+
+
+Clock.hourColor: red
+Clock.foreground: red
+
+Xft.dpi:96
