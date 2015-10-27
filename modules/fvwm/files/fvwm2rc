@@ -98,10 +98,12 @@ Key t		A	4	Layer 0 8
 Key b		A	4	Layer 0 4
 Key r           A       4       Restart fvwm2
 Key v           A       M       exec VBoxManage startvm 339d772a-fd64-4ea6-8f61-200542a9db0c
+
 Key h 		A 	4       ResizeMove w+3 w w-3 w
 Key j 		A 	4       ResizeMove w w-3 w w+3
 Key k 		A 	4       ResizeMove w w+3 w w-3
 Key l 		A 	4       ResizeMove 880p 1076p 70 0
+
 Key d 		A 	4       ResizeMove w+3 w w  w
 Key a 		A 	4       ResizeMove w-3 w w  w
 Key s 		A 	4       ResizeMove w w+3 w w
@@ -109,10 +111,10 @@ Key w 		A 	4       ResizeMove w w-3 w w
 
 
 
-Key Up		A 	4 	Move w w-3
-Key Down	A 	4 	Move w w+3
-Key Left	A 	4 	Move w-3 w
-Key Right	A 	4 	Move w+3 w
+Key Up		A 	4 	Move w w-1
+Key Down	A 	4 	Move w w+1
+Key Left	A 	4 	Move w-1 w
+Key Right	A 	4 	Move w+1 w
 Key Return 	A 	M 	Maximize
 Key Tab		A	M	WindowList Root c c CurrentAtEnd CurrentDesk NoIcons	NoGeometry NoCurrentDeskTitle NoNumInDeskTitle NoDeskNum SelectOnRelease Meta_L Layer 4
 
@@ -124,3 +126,5 @@ Key 2           A       4       Exec exec xclip ~hmy/.pass/google
 Key 3           A       4       Exec exec xclip ~hmy/.pass/dns
 Key 0 		WI 	MC 	Key 0 A 4 WindowId $[w.id] WindowListFunc
 Key 9 		WI 	MC 	Key 9 A 4 WindowId $[w.id] WindowListFunc
+Key 7 		WI 	MC 	Key 7 A 4 WindowId $[w.id] WindowListFunc
+Key 8 		WI 	MC 	Key 8 A 4 WindowId $[w.id] WindowListFunc
