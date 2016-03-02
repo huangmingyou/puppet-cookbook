@@ -1,0 +1,23 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - /var/log/nginx/access.json.log
+      input_type: log
+      document_type: nginx
+      tail_files: true
+      backoff: 1s
+  idle_timeout: 5s
+  registry_file: /var/lib/filebeat/registry
+output:
+  logstash:
+    hosts: ["logstash.server.ip:5044"]
+shipper:
+logging:
+  level: info
+  to_files: true
+  to_syslog: false
+  files:
+    path: /tmp/
+    name: filebeat.log
+    keepfiles: 7
