@@ -5,7 +5,7 @@ _s ()
 	cur=${COMP_WORDS[COMP_CWORD]}
 	case "$cur" in 
 	*)
-	local all=$(cat /home/hmy/.all)
+	local all=$(cat /home/hmy/.all.d/*)
 	COMPREPLY=($(compgen -W "${all}" -- ${cur}));;
 	esac
 	return 0
