@@ -1,0 +1,31 @@
+config setup
+    uniqueids=never 
+
+
+conn android_xauth_psk
+    keyexchange=ikev1
+    left=%any
+    leftauth=psk
+    leftsubnet=0.0.0.0/0
+    right=%any
+    rightauth=psk
+    rightauth2=xauth
+    rightsourceip=10.31.2.0/24
+    auto=add
+
+
+conn windows7
+    keyexchange=ikev2
+    ike=aes256-sha1-modp1024! 
+    rekey=no
+    left=%any
+    leftauth=pubkey
+    leftsubnet=0.0.0.0/0
+    leftcert=server.cert.pem
+    right=%any
+    rightauth=eap-mschapv2
+    rightsourceip=10.31.2.0/24
+    rightsendcert=never
+    eap_identity=%any
+    auto=add
+
