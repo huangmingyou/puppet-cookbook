@@ -1,0 +1,4 @@
+1. xfonts-wqy 字体需要压缩才能用
+2. 笔记本声音用t450 里面的文件配置下
+3. ssh-askpass 之前用ssh-add 增加key
+4. slim 启动fvwm , gdm3 启动会有屏幕残影
