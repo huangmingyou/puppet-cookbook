@@ -5,7 +5,7 @@ _s ()
 	cur=${COMP_WORDS[COMP_CWORD]}
 	case "$cur" in 
 	*)
-	local all=$(cat /home/hmy/.all.d/*;sed -n '9,1000p' /etc/hosts|cut -f 2 -d" ")
+	local all=$(cat ~hmy/.hosts /etc/hosts|cut -f 2 -d" ")
 	COMPREPLY=($(compgen -W "${all}" -- ${cur}));;
 	esac
 	return 0

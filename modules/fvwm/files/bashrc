@@ -108,8 +108,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias ssh='xclip ~/.pass/root;ssh'
-alias s='xclip ~/.pass/google;ssh'
 [ -f /usr/share/bash-completion/bash_completion ]&&. /usr/share/bash-completion/bash_completion
 export MAIL=/home/hmy/Mail
 alias  xc='xclip -selection clipboard'
