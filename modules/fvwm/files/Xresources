@@ -35,7 +35,7 @@ URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
 Rxvt.saveLines:10000
-Rxvt.geometry: 159x56+0+0
+Rxvt.geometry: 194x63+503-20
 !
 !
 Rxvt.preeditType: Root
@@ -47,8 +47,8 @@ URxvt.scrollBar: false
 
 
 
-URxvt.font:xft:Terminus-11:style=Regular,xft:WenQuanYi Bitmap Song:style=Regular
-URxvt.boldFont:xft:Terminus-11:style=Regular,xft:WenQuanYi Bitmap Song:style=Regular
+URxvt.font:xft:Terminus-13:style=Regular,xft:WenQuanYi Bitmap Song-11:style=Regular
+URxvt.boldFont:xft:Terminus-13:style=Regular,xft:WenQuanYi Bitmap Song-11:style=Regular
 
 
 URxvt.perl-ext:           default,matcher
