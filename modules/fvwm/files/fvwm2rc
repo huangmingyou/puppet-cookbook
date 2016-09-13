@@ -22,7 +22,7 @@ Colorset 5 fg black, bg rgb:55/aa/aa, sh rgb:55/aa/aa, hi rgb:55/aa/aa
 Colorset 6 fg black, bg rgb:e4/78/33, sh rgb:e4/78/33, hi rgb:e4/78/33
 ######################################################################
 ######################################################################
-Style *		BorderWidth 2, !Handles, !Title, !Icon
+Style *		BorderWidth 0.5, !Handles, !Title, !Icon
 Style *		ClickToFocus, ClickToFocusPassesClick,ResizeHintOverride
 Style *		SmartPlacement
 Style * 	BorderColorset 1
